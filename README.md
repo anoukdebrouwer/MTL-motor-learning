@@ -22,10 +22,10 @@ Create .avi animations of both tasks with **createTaskAnimations_MEMRI.m**.
 ## Data structure
 1. Raw data should be in "TaskFolder"/1_RawData, with a subfolder containing the data of each subject: a .txt control file containing the details of the experiment, and a .dat file for each trial.
 2. Processed data is saved in "TaskFolder"/2_ProcessedData.
-3. Group results are saved in "TaskFolder"/3_ProcessedData. Individual result figures are saved in "ProjectFolder"/3_ProcessedData/Figures.
+3. Group results are saved in "TaskFolder"/3_ProcessedData. Individual result figures are saved in "TaskFolder"/3_ProcessedData/Figures.
 
 ```
-"ProjectFolder" (e.g., VMR_MEMRI)
+"TaskFolder" (e.g., VMR_MEMRI)
 └───1_RawData
 │   └───S01
 │       │   controlFile.txt
