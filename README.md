@@ -1,10 +1,12 @@
 # MTL-motor-learning
+de Brouwer, Rashid, Flanagan, Poppenk, Gallivan. Variation in error-based and reward-based human motor learning is related and associated with entorhinal volume. 
+
 _Under construction_
 
 ## Project description
-We investigate the relation between error-based motor learning (using a visuomotor rotation task) and reward-based motor learning (using a path finding task) using correlational and principal component analyses. Next, we perform multiple linear regression analysis to relate motor learning performance with the volumes of areas in the medial temporal lobe (MTL) obtained through high-resolution structural MRI (by Jordan Poppenk's lab; the ME(mory)MRI project). This research was performed at Queen's University, Kingston, ON, Canada.
+We investigate the relation between error-based motor learning (using a visuomotor rotation task) and reward-based motor learning (using a path finding task) using correlational and principal component analyses. Next, we perform multiple linear regression analysis to relate motor learning performance with the volumes of areas in the medial temporal lobe (MTL) obtained through high-resolution structural MRI ('the ME(mory)MRI project'). All research was performed at Queen's University, Kingston, ON, Canada.
 
-For details see the preprint on biorxiv: de Brouwer, Rashid, Flanagan, Poppenk, Gallivan. Variation in error-based and reward-based human motor learning is related and associated with entorhinal volume. 
+For details see the [preprint on biorxiv](https://doi.org/10.1101/2020.05.27.119529). 
 
 ## Data processing, analysis, and visualization
 The analysis code specific to this project is in this repo, to perform the full analysis and visualization we also need code in the Analysis-tools and Plotting-tools repo's.
