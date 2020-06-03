@@ -12,12 +12,15 @@ For details see the [preprint on biorxiv](https://doi.org/10.1101/2020.05.27.119
 The analysis code specific to this project is in this repo, to perform the full analysis and visualization we also need code in the Analysis-tools and Plotting-tools repo's.
 
 ### VMR task
-1. Process the raw data with **processVMRtabletData.m** (in Analysis-tools/Tablet), which creates one .mat file per subject.
-2.
+1. Process the raw data with **processVMRtabletData.m** (Analysis-tools/Tablet), which creates one .mat file per subject.
+2. Calculate and/or plot individual subject results with **calcIndResultsVMRgaze.m** (Analysis-tools/Tablet) which creates one .mat file and several figures per subject.
 
 ### RL task
 1. Process the raw data with **processRLtabletData.m** (in Analysis-tools/Tablet), which creates one .mat file per subject.
 2.
+
+### Relate tasks, and relate motor learning performance to structural brain data
+1. 
 
 Create .avi animations of both tasks with **createTaskAnimations_MEMRI.m**.
 
