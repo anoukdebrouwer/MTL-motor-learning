@@ -1,12 +1,12 @@
 # MTL-motor-learning
-de Brouwer, Rashid, Flanagan, Poppenk, Gallivan. Variation in error-based and reward-based human motor learning is related and associated with entorhinal volume. 
+de Brouwer, Rashid, Flanagan, Poppenk, Gallivan. Variation in error-based and reward-based human motor learning is related and associated with entorhinal volume. [[preprint on biorxiv]](https://doi.org/10.1101/2020.05.27.119529)
 
 _Under construction_
 
 ## Project description
-We investigate the relation between error-based motor learning (using a visuomotor rotation task) and reward-based motor learning (using a path finding task) using correlational and principal component analyses. Next, we perform multiple linear regression analysis to relate motor learning performance with the volumes of areas in the medial temporal lobe (MTL) obtained through high-resolution structural MRI ('the ME(mory)MRI project'). All research was performed at Queen's University, Kingston, ON, Canada.
+We investigate the relation between error-based motor learning (using a visuomotor rotation task) and reward-based motor learning (using a path finding task) using correlational and principal component analyses. Next, we perform multiple linear regression analysis to relate motor learning performance with the volumes of areas in the medial temporal lobe (MTL) obtained through high-resolution structural MRI ('the ME(mory)MRI project'). 
 
-For details see the [preprint on biorxiv](https://doi.org/10.1101/2020.05.27.119529). 
+All research was performed at Queen's University, Kingston, ON, Canada.
 
 ## Data processing, analysis, and visualization
 The analysis code specific to this project is in this repo, to perform the full analysis and visualization we also need code in the Analysis-tools and Plotting-tools repo's.
@@ -14,6 +14,7 @@ The analysis code specific to this project is in this repo, to perform the full 
 ### VMR task
 1. Process the raw data with **processVMRtabletData.m** (Analysis-tools/Tablet), which creates one .mat file per subject.
 2. Calculate and/or plot individual subject results with **calcIndResultsVMRgaze.m** (Analysis-tools/Tablet) which creates one .mat file and several figures per subject.
+3. Combine the individual subject results into a single datafile with **combineIndResultsVMRGaze.m** (Analysis-tools/Tablet) which creates one .mat file with all data and one figure of the individual learning curves. 
 
 ### RL task
 1. Process the raw data with **processRLtabletData.m** (in Analysis-tools/Tablet), which creates one .mat file per subject.
