@@ -14,6 +14,7 @@ The analysis code specific to this project is in this repo, to perform the full 
 ### VMR task
 1. Process the raw data with **processVMRtabletData.m** (Analysis-tools/Tablet), which creates one .mat file per subject.
 2. Calculate and/or plot individual subject results with **calcIndResultsVMRgaze.m** (Analysis-tools/Tablet) which creates one .mat file and several figures per subject.
+3. Combine the individual subject results into a single datafile with **combineIndResultsVMRGaze.m** (Analysis-tools/Tablet) which creates one .mat file with all data and one figure of the individual learning curves. 
 
 ### RL task
 1. Process the raw data with **processRLtabletData.m** (in Analysis-tools/Tablet), which creates one .mat file per subject.
