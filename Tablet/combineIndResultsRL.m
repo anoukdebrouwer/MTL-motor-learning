@@ -2,7 +2,7 @@ function combineIndResultsRL(projectPath,meanOrMedian,createPlots,savePlots)
 % combineIndResultsRL Process individual data of RL experiments and
 % combine into a group data file.
 %
-% in progress, not on Github yet
+% in progress
 
 % MIT License
 % Copyright (c) 2020 Anouk de Brouwer
