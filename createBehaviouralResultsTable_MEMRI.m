@@ -1,8 +1,11 @@
 function createBehaviouralResultsTable_MEMRI(projectPath,saveToPath)
-% createBehaviouralResultsTable_MEMRI
+% createBehaviouralResultsTable_MEMRI Create table with behavioural results
+% of MEMRI project.
 %
-% Create table with behavioural results of VMR and RL task in MEMRI project,
-% and save table in .csv file.
+% createBehaviouralResultsTable_MEMRI(projectPath,saveToPath) creates a
+% single table with the behavioural summary scores of the VMR and RL task 
+% in the MEMRI project in projectPath. It saves the table in a .csv file in
+% saveToPath.
 
 % MIT License
 % Copyright (c) 2020 Anouk de Brouwer
@@ -176,4 +179,5 @@ if overwrite == 1
     disp(['Saved ' saveToPath fileName])
 else
     disp('Results not been saved')
+    keyboard
 end

@@ -1,7 +1,9 @@
 function createMRIresultsTable_MEMRI(dataPath,saveToPath)
-% createMRIresultsTable_MEMRI
+% createMRIresultsTable_MEMRI Create table with MRI results of MEMRI project
 %
-% createMRIresultsTable_MEMRI(dataPath,saveToPath)
+% createMRIresultsTable_MEMRI(dataPath,saveToPath) residualizes the MRI
+% data in dataPath, adds demographics, and saves a table as .csv file in
+% saveToPath.
 
 % MIT License
 % Copyright (c) 2020 Anouk de Brouwer
@@ -12,6 +14,7 @@ if nargin==0
 end
 
 %% Residualize MRI data
+% Correct volumes for total intracranial volume
 
 % raw MRI data
 T_MRI = readtable([dataPath 'table_MRI_noresid.csv'],'ReadRowNames',true);
@@ -36,10 +39,6 @@ gender(m,1) = {'M'};
 gender(w,1) = {'W'};
 T_MRI_resid.gender = gender;
 
-%% Plot distributions of variables (data points with mean+SEM)
-
-
-
 %% Save results table
 
 % check if file exists
@@ -53,7 +52,7 @@ end
 
 % save file
 if overwrite == 1
-    writetable(T_MRI_resid,fileName,'WriteRowNames',true);
+    writetable([saveToPath fileName],'WriteRowNames',true);
     disp(['Saved ' saveToPath fileName])
 else
     disp('Table has not been saved')
