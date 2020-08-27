@@ -9,21 +9,28 @@ We investigate the relation between error-based motor learning (using a visuomot
 All research was performed at Queen's University, Kingston, ON, Canada.
 
 ## Data processing, analysis, and visualization
-The analysis code specific to this project is in this repo, to perform the full analysis and visualization we also need code in the Analysis-tools and Plotting-tools repo's.
+Run **processAll_MEMRI** to perform all the data processing steps as follows.  
 
-### VMR task
-1. Process the raw data with **processVMRtabletData.m** (Analysis-tools/Tablet), which creates one .mat file per subject.
-2. Calculate and/or plot individual subject results with **calcIndResultsVMRgaze.m** (Analysis-tools/Tablet) which creates one .mat file and several figures per subject.
-3. Combine the individual subject results into a single datafile with **combineIndResultsVMRGaze.m** (Analysis-tools/Tablet) which creates one .mat file with all data and one figure of the individual learning curves. 
+### Process VMR task data
+1. Process the raw data with **processVMRtabletData**, which creates one .mat file per subject.
+2. Calculate and/or plot individual subject results with **calcIndResultsVMRgaze** which creates one .mat file and several figures per subject.
+3. Combine the individual subject results into a single datafile with **combineIndResultsVMRGaze** which creates one .mat file with all data and a figure with the individual learning curves. 
 
-### RL task
-1. Process the raw data with **processRLtabletData.m** (in Analysis-tools/Tablet), which creates one .mat file per subject.
-2.
+### Process RL task data
+1. Process the raw data with **processRLtabletData** (in Analysis-tools/Tablet), which creates one .mat file per subject.
+2. Calculate and/or plot individual subject results with **calcIndResultsRL** which creates one .mat file and several figures per subject.
+3. Combine the individual subject results into a single datafile with **combineIndResultsRL** which creates one .mat file with all data and a figure with the individual learning curves. 
+
+### Create table with VMR and RL scores
+Create a single table with summary scores per subject and save to .csv file with **createBehaviouralResultsTable_MEMRI**.
+
+### Get MRI data, residualize volumes, and create table
+Load the MRI volumes and correct for total intracranial volume (i.e., residualize), add demographics and save values to .csv file with **createMRIresultsTable_MEMRI**.
 
 ### Relate tasks, and relate motor learning performance to structural brain data
-1. 
+_Coming soon_
 
-Create .avi animations of both tasks with **createTaskAnimations_MEMRI.m**.
+Create .avi animations of both tasks with **createTaskAnimations_MEMRI**.
 
 ## Data structure
 1. Raw data should be in "TaskFolder"/1_RawData, with a subfolder containing the data of each subject: a .txt control file containing the details of the experiment, and a .dat file for each trial.
@@ -55,3 +62,5 @@ Create .avi animations of both tasks with **createTaskAnimations_MEMRI.m**.
         |   rawAngles_S02.pdf
         |   ...
 ```
+
+For questions: ajdebrouwer@gmail.com
