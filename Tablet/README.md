@@ -1,4 +1,4 @@
-## Tablet
+# Tablet
 Code for analyzing data collected on tablet setup at Queen's University.
 
 * **analyzeVMRgazeData** - Analyze gaze data of visuomotor rotation experiments.
