@@ -52,7 +52,7 @@ end
 
 % save file
 if overwrite == 1
-    writetable([saveToPath fileName],'WriteRowNames',true);
+    writetable(T_MRI_resid,[saveToPath fileName],'WriteRowNames',true);
     disp(['Saved ' saveToPath fileName])
 else
     disp('Table has not been saved')

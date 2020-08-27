@@ -25,7 +25,7 @@ calcIndResultsVMRgaze(projectPath,processData,createPlots,savePlots)
 meanOrMedian = 1;
 createPlots = true;
 savePlots = true;
-combineIndResultsVMRGaze(projectPath,meanOrMedian,createPlots,savePlots)
+combineIndResultsVMRgaze(projectPath,meanOrMedian,createPlots,savePlots)
 
 %% Process RL task data
 
@@ -33,6 +33,7 @@ combineIndResultsVMRGaze(projectPath,meanOrMedian,createPlots,savePlots)
 projectPath = [tabletPath 'RL_MEMRI/'];
 
 % process raw data
+plotTrials = false; % set to true to plot each trial separately for visual inspection
 processRLtabletData(projectPath,plotTrials)
 
 % calculate and plot individual subject results
