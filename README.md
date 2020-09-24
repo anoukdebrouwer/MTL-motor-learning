@@ -9,25 +9,13 @@ We investigate the relation between error-based motor learning (using a visuomot
 All research was performed at Queen's University, Kingston, ON, Canada.
 
 ## Data processing, analysis, and visualization
-Run **processAll_MEMRI** to perform all the data processing steps as follows.  
+Run **processAll_MEMRI** to perform all the data processing steps:  
+* Process VMR task data
+* Process RL task data
+* Create table with VMR and RL scores
+* Get MRI data, residualize volumes, and create table with relevant data
 
-### Process VMR task data
-1. Process the raw data with **processVMRtabletData**, which creates one .mat file per subject.
-2. Calculate and/or plot individual subject results with **calcIndResultsVMRgaze** which creates one .mat file and several figures per subject.
-3. Combine the individual subject results into a single datafile with **combineIndResultsVMRGaze** which creates one .mat file with all data and a figure with the individual learning curves. 
-
-### Process RL task data
-1. Process the raw data with **processRLtabletData** (in Analysis-tools/Tablet), which creates one .mat file per subject.
-2. Calculate and/or plot individual subject results with **calcIndResultsRL** which creates one .mat file and several figures per subject.
-3. Combine the individual subject results into a single datafile with **combineIndResultsRL** which creates one .mat file with all data and a figure with the individual learning curves. 
-
-### Create table with VMR and RL scores
-Create a single table with summary scores per subject and save to .csv file with **createBehaviouralResultsTable_MEMRI**.
-
-### Get MRI data, residualize volumes, and create table
-Load the MRI volumes and correct for total intracranial volume (i.e., residualize), add demographics and save values to .csv file with **createMRIresultsTable_MEMRI**.
-
-### Relate tasks, and relate motor learning performance to structural brain data
+Run **finalResults_MEMRI** to calculate the final results.
 _Coming soon_
 
 Create .avi animations of both tasks with **createTaskAnimations_MEMRI**.
