@@ -1,5 +1,5 @@
 # MTL-motor-learning
-de Brouwer, Rashid, Flanagan, Poppenk, Gallivan. Variation in error-based and reward-based human motor learning is related and associated with entorhinal volume. Under review. [[preprint on biorxiv]](https://doi.org/10.1101/2020.05.27.119529)
+Anouk J. de Brouwer, Mohammad R. Rashid, J. Randall Flanagan, Jordan Poppenk, Jason P. Gallivan. Variation in error-based and reward-based human motor learning is related and associated with entorhinal volume. Under review. [[preprint on biorxiv]](https://doi.org/10.1101/2020.05.27.119529)
 
 All research was performed at Queen's University, Kingston, ON, Canada.
 
