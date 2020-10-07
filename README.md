@@ -66,4 +66,4 @@ Create .avi animations of both tasks with **createTaskAnimations_MEMRI**.
 ```
 
 ## Contact
-For questions: ajdebrouwer@gmail.com
+ajdebrouwer@gmail.com
