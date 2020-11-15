@@ -20,7 +20,7 @@ We then tested the hypothesis that regions in the medial temporal lobe (MTL) of 
 
 <img src="/Figures/HC_EC_regression_readme.png" width="667">
 
-We propose that the variability in motor learning performance across individuals is driven by how well people implement strategies, i.e., to explore paths in the reward-based learning task and to counter the rotation in the error-based learning task. The ability to use strategies may be linked to anatomical differences in the medial temporal lobe of the brain.
+We propose that the variability in motor learning performance across individuals is driven by how well people implement strategies, i.e., to explore paths in the reward-based learning task and to counter the rotation in the error-based learning task. The ability to use strategies may be linked to anatomical differences in the medial temporal lobe of the brain. Beyond advancing the field of neuroscience, understanding the cognitive and neural mechanisms underlying motor learning could help motivate new approaches to rehabilitation of patients with motor disabilities following neurological disease, such as stroke. 
 
 ## Data processing pipeline
 Run **processAll_MEMRI** to perform the data processing steps:  
